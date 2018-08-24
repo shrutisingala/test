@@ -1,0 +1,35 @@
+
+public class Employee {
+	
+	private int empId;
+	private double salary;
+	private String empName;
+	private String companyName;
+	
+	public Employee() {
+//		this(12,"csipl",12000);
+		empId = 10;
+		empName = "Citi";
+		salary = 1000;
+		companyName = "Citi";
+		
+	}
+	
+	public Employee(int empId, double salary, String empName) {
+		this();
+		this.empId = empId;
+		this.salary = salary;
+		this.empName = empName;
+		this.companyName = "Citi";
+	}
+	
+	public void display() {
+		System.out.println(empName+"\t"+empId+"\t"+companyName);
+	}
+
+	public static void main(String []args) {
+		Employee emp=new Employee(1200, 120000, "abcd");
+		emp.display();
+		
+	}
+}

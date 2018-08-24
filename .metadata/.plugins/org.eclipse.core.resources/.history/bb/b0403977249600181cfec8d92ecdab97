@@ -1,0 +1,20 @@
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// cls_name ref_name
+		Person p;
+		
+		p = new Person();
+		p.setValues();
+		p.display();
+		
+		Person p1 = new Person();
+		p1.setValues1(22, "Eesha");
+		p1.display();
+		
+
+	}
+
+}

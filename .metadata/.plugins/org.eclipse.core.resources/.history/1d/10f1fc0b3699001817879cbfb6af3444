@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+import com.pojo.Employee;
+
+public class TestEmployee1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter Employee ID, Salary, Age, Name: ");
+		Scanner s = new Scanner(System.in);
+		String nam = s.nextLine();
+		int id = s.nextInt();
+		double sal = s.nextDouble();
+		int age = s.nextInt();
+		
+		
+		Employee emp1 = new Employee(id, sal, age, nam);
+		
+		emp1.show();
+
+	}
+
+}

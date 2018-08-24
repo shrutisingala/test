@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class DemoString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a string: ");
+		String test = s.nextLine();
+		
+		System.out.println("Hashcode of string: " + test.hashCode());
+		System.out.println(test.concat("citi"));
+		System.out.println(test.length());
+
+	}
+
+}

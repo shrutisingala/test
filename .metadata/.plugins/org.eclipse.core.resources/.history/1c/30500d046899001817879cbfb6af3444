@@ -1,0 +1,20 @@
+import com.pojo.Employee;
+
+public class DemoMyClass {
+	
+	public static void main(String []args) {
+		
+		EmployeeIO empIO = new EmployeeIO() {
+			@Override
+			public void writeEmployee(Employee employee) {
+				
+			}
+			
+			@Override
+			public Employee readEmployee() {
+				return null;
+			}
+		}
+	}
+
+}

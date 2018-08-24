@@ -1,0 +1,50 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.Scanner;
+
+import com.pojo.Student;
+
+
+
+public class DemoSerialisation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		try {
+			FileOutputStream fo = new FileOutputStream("student.txt");
+			ObjectOutputStream oo = new ObjectOutputStream(fo);
+			
+			Scanner s = new Scanner(System.in);
+			System.out.println("Enter name, roll number, total marks of first student: ");
+			String name = s.nextLine();
+			int roll = s.nextInt();
+			int mrks = s.nextInt();
+			
+			Student student = new Student(roll,mrks,name);
+			oo.writeObject(student);
+		
+			
+			
+			oo.close();
+			fo.close();
+			
+			System.out.println("operation done");
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+
+	}
+
+}
